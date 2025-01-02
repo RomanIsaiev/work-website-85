@@ -1,0 +1,486 @@
+/* Fonts */
+
+@import url(../fonts/fonts.css);
+
+/* Base */
+
+@import url(../css/base/reset.css);
+@import url(../css/base/normalize.css);
+
+/* Utils */
+
+@import url(../css/utils/variables.css);
+@import url(../css/utils/common.css);
+
+@keyframes pulseScale {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.05;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+.header-button-container {
+  position: relative;
+}
+
+.header-button {
+  display: block;
+  padding: 18px;
+
+  color: #101010;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 14px */
+  letter-spacing: -0.28px;
+  text-transform: uppercase;
+
+  border-radius: 70px;
+  background: linear-gradient(90deg, #eaa800 0%, #ffeb80 50%, #eaa800 100%);
+
+  max-width: 280px;
+  width: 100%;
+  border: inherit;
+  margin: 0 auto;
+}
+
+.get-for-week {
+  color: #101010;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.26px;
+
+  max-width: 274px;
+  margin: 12px auto 0 auto;
+}
+
+.get-for-week span {
+  color: #638aed;
+  font-weight: 450;
+}
+
+/* header-sale-mark */
+
+.header-sale-mark {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.sale-mark {
+  position: relative;
+
+  animation: spin 2s linear infinite;
+  animation-duration: 10s;
+}
+
+.rotate {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.sale-number {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  transform: translate(-50%, -50%);
+
+  color: #fff;
+  font-family: 'Futura PT';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30%;
+  text-transform: uppercase;
+}
+
+/* main */
+
+.main {
+  padding: 24px 0;
+}
+
+.title {
+  color: #090909;
+  text-align: center;
+  font-family: 'Bebas Neue Cyrillic';
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -1.35px;
+
+  background: linear-gradient(90deg, #eaa800 0%, #ffcf20 50%, #eaa800 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  margin-top: -8px;
+
+  color: #090909;
+  text-align: center;
+  font-family: 'Bebas Neue Cyrillic';
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%;
+  letter-spacing: -1.35px;
+
+  margin-bottom: 8px;
+}
+
+.desc {
+  color: #62a1ff;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 90%; /* 21.6px */
+  letter-spacing: -0.48px;
+
+  margin-bottom: 40px;
+}
+
+.video-text {
+  color: #090909;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 105%; /* 15.75px */
+  letter-spacing: -0.3px;
+
+  margin-bottom: 12px;
+}
+
+.video-wrapper {
+  margin-bottom: 16px;
+}
+
+.timer-text {
+  color: #090909;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 17.25px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 100%; /* 17.25px */
+  letter-spacing: -0.345px;
+  text-transform: uppercase;
+}
+
+.countdown {
+  margin-bottom: 40px;
+}
+
+.ready {
+  display: none;
+}
+
+.text {
+  color: #090909;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 20px */
+  letter-spacing: -0.4px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.text span {
+  color: #3e75e5;
+}
+
+.link-btn {
+  display: block;
+  padding: 24px;
+
+  color: #fff;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 16px */
+  letter-spacing: -0.32px;
+  text-transform: uppercase;
+
+  border-radius: 70px;
+  background: linear-gradient(90deg, #3e75e5 0%, #62a1ff 50%, #3e75e5 100%);
+
+  animation: pulseScale 2000ms infinite;
+}
+
+/* timer */
+
+.countdown {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.countdown-number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown-time {
+  display: block;
+  color: #62a1ff;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -0.64px;
+  width: 50px;
+}
+
+.countdown-doubledot {
+  content: '';
+  display: flex;
+  height: 30px;
+  width: 1px;
+  background: #62a1ff;
+  margin: 0 auto;
+}
+
+.countdown-label {
+  color: #62a1ff;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.28px;
+
+  margin-top: -6px;
+}
+
+/* about-author */
+
+.about-author {
+}
+
+.section {
+}
+
+.container {
+}
+
+.about-author-title-container {
+  margin-bottom: 28px;
+}
+
+.about-author-subtitle {
+  color: #101010;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 100%; /* 62.4px */
+  letter-spacing: -2.08px;
+  text-transform: uppercase;
+}
+
+.about-author-title {
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 80%; /* 44px */
+  letter-spacing: -2.2px;
+  text-transform: uppercase;
+
+  background: linear-gradient(90deg, #4a81ef 0%, #7db1ff 50%, #4a81ef 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-desc-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 40px;
+}
+
+.about-desc {
+  color: #101010;
+  font-family: 'Futura PT';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.3px;
+
+  max-width: 215px;
+}
+
+.about-desc span {
+  font-weight: 500;
+}
+
+.story-wrapper {
+  padding: 25px;
+  border-radius: 15px;
+  background: #ebf5ff;
+}
+
+.story-title {
+  color: #101010;
+  font-family: 'Futura PT';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 100%; /* 18px */
+  letter-spacing: -0.36px;
+
+  margin-bottom: 5px;
+}
+
+.story-text {
+  color: #101010;
+  font-family: 'Futura PT';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 15px */
+  letter-spacing: -0.3px;
+
+  margin-bottom: 20px;
+}
+
+.story-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.story-gallery .list-item {
+}
+
+/* students-cases */
+
+.students-cases {
+  padding-bottom: 60px;
+}
+
+.container {
+}
+
+.students-cases-title-container {
+  margin-bottom: 20px;
+}
+
+.students-cases-title {
+  color: #101010;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 24.012px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 28.814px */
+  letter-spacing: -0.96px;
+  text-transform: uppercase;
+}
+
+.students-cases-subtitle {
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 20.582px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 80%; /* 16.465px */
+  letter-spacing: -0.823px;
+  text-transform: uppercase;
+
+  background: linear-gradient(90deg, #4a81ef 0%, #7db1ff 50%, #4a81ef 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.students-cases-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  list-style: disc;
+
+  max-width: 270px;
+  margin: 0 auto 18px auto;
+}
+
+.students-cases-list .list-item {
+  color: #101010;
+  font-family: 'Futura PT';
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 14.3px */
+  letter-spacing: -0.26px;
+}
+
+/* swiper 1 */
+
+.mySwiper1 {
+  margin-bottom: 10px;
+}
+
+.mySwiper1 .swiper-wrapper {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
+.mySwiper1 .swiper-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.mySwiper1 .swiper-pagination {
+  --swiper-pagination-color: #638aed;
+  --swiper-pagination-bullet-inactive-color: rgba(99, 138, 237, 0.3);
+  --swiper-pagination-bullet-inactive-opacity: 1;
+}
