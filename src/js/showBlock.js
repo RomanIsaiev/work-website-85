@@ -8,7 +8,7 @@ const firstVisitTime = localStorage.getItem('firstVisitTime');
 
 if (firstVisitTime) {
   const timeDifference = currentTime - parseInt(firstVisitTime);
-  const thirtyMinutes = 30 * 60 * 1000;
+  const thirtyMinutes = 5 * 60 * 1000;
 
   if (timeDifference >= thirtyMinutes) {
     showBlock();
@@ -16,5 +16,5 @@ if (firstVisitTime) {
 } else {
   localStorage.setItem('firstVisitTime', currentTime);
 
-  setTimeout(showBlock, 30 * 60 * 1000);
+  setTimeout(showBlock, 5 * 60 * 1000);
 }
